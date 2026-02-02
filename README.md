@@ -2,6 +2,9 @@
 
 A production-ready React component library built with accessibility-first principles following WCAG 2.1 AA standards.
 
+![Home Page](page.png)
+![Lighthouse Score](lighthouse.png)
+
 ## Features
 
 - **Fully Accessible**: WCAG 2.1 AA compliant with proper ARIA attributes
