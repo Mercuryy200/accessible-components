@@ -1,46 +1,68 @@
-# Getting Started with Create React App
+# Accessible Component Library
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A production-ready React component library built with accessibility-first principles following WCAG 2.1 AA standards.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Fully Accessible**: WCAG 2.1 AA compliant with proper ARIA attributes
+- **Keyboard Navigation**: Full keyboard support (Tab, Enter, Escape, Arrow keys)
+- **Screen Reader Friendly**: Semantic HTML with descriptive labels
+- **TypeScript**: Type-safe props and interfaces
+- **Focus Management**: Visible focus indicators and focus trapping
+- **Responsive**: Works on all device sizes
 
-### `npm start`
+## Components
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Button
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Multiple variants (primary, secondary, danger)
+- Loading states with visual indicators
+- Disabled state handling
+- Proper focus management
 
-### `npm test`
+### Input
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- Associated labels with htmlFor
+- Error and helper text support
+- Required field indicators
+- ARIA descriptions
 
-### `npm run build`
+### Modal
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Focus trap implementation
+- ESC key to close
+- Click outside to dismiss
+- Scroll lock when open
+- Restores focus on close
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Running Locally
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+\`\`\`bash
+npm install
+npm start
+\`\`\`
 
-### `npm run eject`
+## Testing
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Run accessibility tests:
+\`\`\`bash
+npm test
+\`\`\`
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Accessibility Checklist
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- ✅ Keyboard navigation
+- ✅ Screen reader support
+- ✅ Focus management
+- ✅ ARIA attributes
+- ✅ Color contrast (4.5:1 minimum)
+- ✅ Touch target size (44x44px minimum)
+- ✅ Error messages announced
+- ✅ Loading states communicated
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+## Technologies
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+- React 18
+- TypeScript
+- CSS Modules
+- React Testing Library
